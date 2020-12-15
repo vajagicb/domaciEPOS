@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style7.css">
+    <title>BrainUP | Prijava</title>
+    <script src="../script/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../script/skripta.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+       
+        <div class="logo">
+            <div><a href="index.html"><img src="../img/logoo.png" alt="" class="log"></a></div> 
+            <div class="ime">BrainUP</div>
+        </div>
+        <a href="#" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="linkovi">
+        <ul>
+            <li><a href="index2.html">Projekat</a></li>
+            <li><a href="index3.html">Radionice</a></li>
+            <li><a href="index6.html">Organizatori</a></li>
+            <li><a href="index5.html">Kontakt</a></li>
+            <li><a href="index7.html" id="active">Prijava</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="jedan">
+        <p class="nas">BrainUp</p>
+        <p class="podnas">Forma za prijavu</p>
+    </div>
+
+    <div class="telo">
+    
+        
+    <form name="prijava" id="forma">
+        <label for="ime" class="pitanja">1. Vaše ime i prezime</label> <br> <br>
+        <input type="text" name="" id="ime" class="txt" placeholder="Unesite svoje ime i prezime"> <br> <br>
+
+        <label for="datepicker" class="pitanja">2. Vaš datum rođenja</label> <br> <br>
+        <input type="text" name="" id="datepicker" class="txt" placeholder="Odaberite svoj datum rođenja"> <br> <br>
+
+        <label for="mail" class="pitanja">3. Imejl</label> <br> <br>
+        <input type="text" name="" id="mail" class="txt" placeholder="Unesite svoj imejl" onkeydown="validacija()"><span id="txt"></span> <br> <br>
+
+        <label for="telefon" class="pitanja">4. Broj telefona</label> <br>  <br>
+        <input type="text" name="" id="telefon" class="txt" placeholder="Unesite svoj telefon"> <br> <br>
+
+        <label for="odg" class="pitanja">5. Da li ste ranije učestvovali na BrainUP-u?</label> <br> <br>
+        <input type="radio" name="" id="odg" value="Da"> <label for="odg">Da</label><br>
+        <input type="radio" name="" id="odg" value="Ne"> <label for="odg">Ne</label><br> <br>
+
+        <label for="zasto" class="pitanja">6. Zašto ste se odlučili da učestvujete na projektu?</label> <br> <br>
+        <textarea name="" id="zasto" cols="30" rows="10"></textarea> <br> <br>
+
+        <label for="kako" class="pitanja">7. Kako ste saznali za ovaj projekat?</label> <br> <br>
+        <select name="" id="kako">
+            <option value="insta">Preko Instagrama</option> 
+            <option value="fb">Preko Facebook-a</option>
+            <option value="stand">Na štandu</option>
+            <option value="prijatelj">Preko prijatelja</option>
+            <option value="sajt">Preko sajta</option>
+        </select> <br> <br>
+
+        <label for="rad" class="pitanja">8. Odaberite radionice na kojima želite da učestvujete</label> <br> <br>
+        <input type="checkbox" name="" id="rad" value=""> <label for="rad">Kreativno razmišljanje</label><br>
+        <input type="checkbox" name="" id="rad" value=""> <label for="rad">Pažnja i koncentracija</label> <br>
+        <input type="checkbox" name="" id="rad" value=""> <label for="rad">Emocionalna inteligencija</label><br>
+        <input type="checkbox" name="" id="rad" value=""> <label for="rad">Kritičko razmišljanje</label> <br>
+        <input type="checkbox" name="" id="rad" value=""> <label for="rad">Tehnike pamćenja</label><br>
+        <input type="checkbox" name="" id="rad" value=""> <label for="rad">Komunikacione veštine</label><br> <br>
+
+        <button type="submit" id="potvrda" onclick="obavestenje()">Pošaljite</button>
+        <button type="reset"  id="resetDugme1" onclick="resetDugme()">Resetujte</button>
+
+    </form> 
+</div>
+    
+<footer class="footer">
+    Powered by&nbsp;<b>Family&Educators</b>&nbsp; &copy; <span><script>document.write(new Date().getFullYear())</script></span> 
+</footer>
+
+</body>
+</html>

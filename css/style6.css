@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  height: 10vh;
+  border-bottom: 2px solid #083b66;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 0 20px 0 15px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.navbar .logo {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.navbar .logo .log {
+  height: 10vh;
+}
+.navbar .ime {
+  padding-left: 1em;
+  font-size: 36px;
+  font-family: cursive;
+  color: #083b66;
+  line-height: 10vh;
+}
+.navbar ul {
+  font-size: 18px;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.navbar ul li {
+  list-style-type: none;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+}
+.navbar ul li a {
+  text-align: center;
+  text-decoration: none;
+  padding: 0 1em;
+  color: #083b66;
+}
+.navbar ul li:last-child {
+  border: 2px solid #083b66;
+  border-radius: 20px;
+  margin-right: 0.5em;
+  padding: 1%;
+}
+.navbar ul li:last-child:hover {
+  background-color: #a55fc1bd;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.navbar .toggle-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-btn .bar {
+  height: 5px;
+  width: 100%;
+  background-color: purple;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .toggle-btn {
+    display: flex;
+  }
+  .linkovi {
+    display: none;
+    width: 100%;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+    border-bottom: 4px solid #083b66;
+    background-color: white;
+    position: relative;
+    top: 0;
+    font-family: sans-serif;
+    flex-wrap: nowrap;
+    padding: 10px auto;
+    justify-content: space-between;
+  }
+
+  .linkovi ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .linkovi li {
+    text-align: center;
+  }
+  .linkovi li a {
+    padding: 0.5rem 1rem;
+  }
+  .linkovi.active {
+    display: flex;
+  }
+}
+.jedan {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 15px;
+  /* background-color:  rgba(128, 128, 128, 0.842); */
+  background-image: linear-gradient(#083c66c4, #6f288bc5),
+    url(../img/intmozak.jpg);
+  background-position: left;
+  color: white;
+  padding-left: 200px;
+  border-bottom: 3px solid #022e52;
+}
+.jedan .nas {
+  height: 50%;
+  font-family: cursive;
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+.jedan .podnas {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+.telo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.telo h1 {
+  text-align: center;
+  font-family: cursive;
+  color: white;
+  font-size: 36px;
+  width: 70%;
+  margin-bottom: 50px;
+  padding-top: 20px;
+}
+body {
+  background-color: #083b66;
+}
+.telo p {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  font-size: 18px;
+  width: 60%;
+  margin-bottom: 60px;
+}
+.telo .kartice {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .telo .kartice {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  .telo .kartice .card {
+    width: 90%;
+  }
+  .telo .kartice .card .slika {
+    width: 100%;
+    height: 52%;
+  }
+  .telo .kartice .card .txt {
+    height: 48%;
+    width: 80%;
+  }
+}
+.telo .kartice .card {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.telo .kartice .card .slika {
+  width: 100%;
+  height: 55vh;
+  border-radius: 20px;
+  border: white solid 2px;
+}
+.telo .kartice .card .txt {
+  text-align: center;
+  margin-top: 10px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  width: 100%;
+  height: 55px;
+  background-color: #022e52;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+}
+#active {
+  text-decoration: underline;
+}

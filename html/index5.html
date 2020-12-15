@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style5.css">
+    <script src="../script/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@200&display=swap" rel="stylesheet"> 
+    <script src="../script/skripta.js"></script>
+    <title>BrainUP | Kontakt</title>
+</head>
+<body onload="vratiVreme()">
+    <nav class="navbar">
+       
+        <div class="logo">
+            <div><a href="index.html"><img src="../img/logoo.png" alt="" class="log"></a></div> 
+            <div class="ime">BrainUP</div>
+        </div>
+        <a href="#" class="toggle-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="linkovi">
+        <ul>
+            <li><a href="index2.html">Projekat</a></li>
+            <li><a href="index3.html">Radionice</a></li>
+            <li><a href="index6.html">Organizatori</a></li>
+            <li><a href="index5.html" id="active">Kontakt</a></li>
+            <li><a href="index7.html">Prijava</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="jedan">
+        <p class="nas">BrainUp</p>
+        <p class="podnas">Pronađi nas</p>
+    </div> <div class="telo">
+    <div class="info">
+        <p id="naslov">Kontakt informacije</p>
+        <p id="naziv"> <i>Organizacija Family&Educators</i></p>
+        <p>Adresa: Jove Ilića 154, Beograd 11000</p>
+        <p>Broj telefona: +381 11 2570121</p>
+        <p>E-mail: brainUP@f&e.com</p> 
+        <p id="dodatno">Ako su Vam potrebne bilo kakve dodatne informacije, <br> pošaljite nam poruku i odgovorićemo u što kraćem roku!</p>
+        <form id="forma1">
+        <p> <label>Vaša e-mail adresa <br> <input type="text" name="mejl" id="mejl" placeholder="Unesite svoj e-mail"> </label>
+             </p>
+        <p><label>Vaše ime <br> <span> <input type="text" name="ime" id="ime" placeholder="Unesite svoje ime" ></span> </label></p>
+        <p><label>Tema<br> <input type="text" name="tema" id="tema" placeholder="Unesite temu poruke"></label></p>
+        <p><label>Poruka <br> <textarea name="poruka" id="poruka" cols="55" rows="10"></textarea></label></p>
+        <button type="submit" id="potvr" onclick="porukica()">Pošaljite</button> </form>
+        <br>
+        <div id="sat"></div>
+        <br> 
+    </div>
+    <div class="slika">
+        <img src="../img/contact.jpg" alt="">
+    </div> 
+</div>
+
+<footer class="footer">
+    Powered by&nbsp;<b>Family&Educators</b>&nbsp; &copy; <span><script>document.write(new Date().getFullYear())</script></span> 
+</footer>
+
+
+</body>
+</html>
